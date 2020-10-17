@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.rameshsoft.automation.listeners.ScreenshotAdapater"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.rameshsoft.automation.gmail.scripts.Gmail_Test">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="beforeTCExecution"/>
+          <include name="closeBrowser"/>
+          <include name="afterTCExecution"/>
+          <include name="gmailLogin"/>
+        </methods>
+      </class> <!-- com.rameshsoft.automation.gmail.scripts.Gmail_Test -->
+      <class name="com.rameshsoft.automation.gmail.scripts.FB_Test">
+        <methods>
+          <include name="fbTest"/>
+          <include name="beforeTCExecution"/>
+          <include name="afterTCExecution"/>
+        </methods>
+      </class> <!-- com.rameshsoft.automation.gmail.scripts.FB_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
